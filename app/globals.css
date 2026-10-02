@@ -26,4 +26,13 @@ header{height:122px;background:#020604}.brand .logo-art{width:118px;height:85.36
 @keyframes draw-logo-word{to{transform:scaleX(1)}}
 @keyframes finish-logo{to{opacity:1}}
 @media(max-width:700px){.brand .logo-drawn{width:113px}.footer-brand .logo-drawn{width:94px}}
+
+.subsidiary{max-width:1440px;margin:auto;padding:40px 6% 0}
+.subsidiary-strip{display:grid;grid-template-columns:145px 1fr auto;align-items:center;gap:20px;padding:26px 22px;border:1px solid var(--line);background:#060f09;transition:background .2s,border-color .2s}
+.subsidiary-strip:hover{background:#0a1b10;border-color:#3c8154}
+.subsidiary-strip h2{font-size:28px;letter-spacing:-.7px;line-height:1.2;color:var(--fg)}
+.subsidiary-strip p{font-size:16px;line-height:1.6;margin:8px 0 0}
+.subsidiary-action{display:flex;align-items:center;gap:22px;font-size:13px;letter-spacing:.5px;color:var(--green)}
+.subsidiary-action span{font-size:24px;line-height:1}
+@media(max-width:700px){.subsidiary{padding-top:30px}.subsidiary-strip{grid-template-columns:1fr;gap:16px;padding:22px 20px}.subsidiary-strip .code{margin-right:0}.subsidiary-strip h2{font-size:26px}.subsidiary-action{font-size:14px;justify-content:space-between}}
 @media(prefers-reduced-motion:reduce){.logo-stroke{animation:none!important;stroke-dashoffset:0}.logo-word-reveal{animation:none!important;transform:scaleX(1)}.logo-complete{animation:none!important;opacity:1}}
