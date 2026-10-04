@@ -38,6 +38,22 @@ If the project is empty and the request does not already authorize creating its 
 
 Never confuse a visible UI state or attempted action with success. Keep these states separate when relevant: drafted, saved, installed, discovered, authenticated, callable, tested, adopted. For cloud-synced files, re-read the actual path after saving before concluding that another agent can see the latest version.
 
+## Delegate the work, review with the best model
+
+Anthony's agents work inside one AI lab at a time. Within that lab, cheaper models in the same capability tier do the work, and the lab's designated top model reviews it as Anthony's stand-in before he sees anything. The purpose is fewer lazy or shallow runs on work he expects to be thorough and purposeful.
+
+**Roles.** Workers are the lab's cheaper frontier-tier models. Current examples, not a fixed list: Claude Opus 5.5 and Claude Sonnet 5.5 at Anthropic; GPT-6.1 Sol and GPT-6 Luna at OpenAI. When a lab releases a new cheaper model, confirm on Artificial Analysis, Vals, and Arena that it sits in the same tier as the current workers, then adopt it. The reviewer is the lab's designated best model: today Claude Fable 5.1 and GPT-6 Astra, and whatever each lab names as its top model next. The lab's designation decides this, not benchmarks.
+
+**Go/no-go.** Go when any of these holds: the deliverable will be released, listed, sent, or published; it is research or analysis Anthony will act on; it changes more than one file or touches money, data, security, or accounts; Anthony asks for thorough work. No-go for quick answers, lookups, conversation, and single-file edits with no release; the main model handles those directly. When in doubt, go.
+
+**How it runs.**
+
+1. The orchestrator splits the task and hands each part to a worker with the model set explicitly. Claude Code: `model` on the subagent or Agent call. Codex: `model` and `model_reasoning_effort` in the agent file.
+2. Workers cross-reference their output against the relevant corpus on the internet: current primary sources, official documentation, standards, and the literature for the subject. Nothing is developed in a vacuum. Each worker returns its output with the sources it opened.
+3. The reviewer runs on the lab's best model and acts as Anthony. It re-opens the cited sources, runs the project's checks, compares the output against the definition of done and the release checks, and hunts the marks of a lazy run: skipped steps, unverified claims, placeholder content, quietly narrowed scope, sources cited but not read.
+4. The reviewer returns pass or fail with evidence per item. On fail, the work goes back to the workers with the specific defects, for at most two rounds. After two failed rounds the orchestrator stops and reports what still fails.
+5. Anthony sees only work the reviewer passed, with the reviewer's evidence attached to the completion report.
+
 ## Decide when a project is ready to release
 
 Anthony develops ideas as he builds and intends to earn passive income from them, so readiness is not a judgment about whether the idea is good. It is the point where a marketplace and a buyer would accept the product. Do not ask Anthony whether the product is good enough; nobody can know that before buyers respond. At the first natural pause, name the marketplace the project would list on, such as an app store, a plugin or template marketplace, or Gumroad. That marketplace's shoppers are the audience, so Anthony does not have to define one.
@@ -90,6 +106,8 @@ For frontend work, preserve the intended brand before inventing new UI. When no 
 ## Communication and completion report
 
 Use plain language and concise connected prose. State the result first. During long work, report material findings, current uncertainty, and what the next check will resolve. Do not make Anthony perform a multi-step technical procedure when the agent can do it.
+
+Do not pad a response to appear rigorous. No contrarian side points or "corrections" that do not change the result. No caveats Anthony already knows or has already stated. No options, alternatives, or safeguards outside the constraint he set. No reports of tooling friction, such as a blocked fetch or a denied call, unless it changed the result. A point earns a place only when it changes what Anthony should decide or do; then state it in one sentence with its consequence.
 
 Finish substantive tasks with this structure:
 

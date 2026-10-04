@@ -1,5 +1,5 @@
 {
-  "content_sha256": "8a3403052a1358b93fb3fad39621894eb481ef5216a8b3e13852faaf341c1c73",
+  "content_sha256": "87a7ee50b878fb9e4edf1787997be79642eeffc829a2cba37caf28b7900987fc",
   "files": {
     ".agents/skills/babysit-pr/SKILL.md": "1886be56fe953f8f16e99fc253b9f0ee63031a3dad33058a7b0414e464a84ce5",
     ".agents/skills/babysit-pr/agents/openai.yaml": "372d34e194ae9a2c8436f6c1e37ff2a27e642afe1e5566be7794dce08ed7ceed",
@@ -32,7 +32,7 @@
     ".agents/skills/cto-comms/agents/openai.yaml": "05cf2e0d2fcaee0e77babc11cf0ffc24c75c6ad2818406d86749e123d6e2a7fb",
     ".agents/skills/file-pr/SKILL.md": "c636db84dc5142d1e523433e52056f77d862672baa95b4ba78c61faf2a5381ef",
     ".agents/skills/file-pr/agents/openai.yaml": "982e37c1daa5b475f46e6b2f9244e8da48a8e73df6863156bab6ce06963eb3c1",
-    ".agents/skills/grill-me/SKILL.md": "29eab554a828b548d6fe165c2afd19bfc0c2f71f45d667fe8c029d270f5a8708",
+    ".agents/skills/grill-me/SKILL.md": "b440d6b6d4036685bb655bee5710029175181165e2bf3d408414284616f32900",
     ".agents/skills/grill-me/agents/openai.yaml": "fe8831301f08e1280617d2b9272e358b5a385e360fbdf60ece8549a1efd11ae9",
     ".agents/skills/html-communication/SKILL.md": "e1d8b878273b090e486b4c6873c93fb493efe2d57a9a9cc9e4b6ef2de803acb5",
     ".agents/skills/html-communication/agents/openai.yaml": "89bb367ed263dd055468b4da3e9868107c27ea37345675d3cd95e2bd96d4c352",
@@ -72,7 +72,7 @@
     ".claude/skills/creative-precision/SKILL.md": "d4c1ad3072ee687628a7f7f0ac955dec3151903b6cc9f67f7d3e177f701ee39f",
     ".claude/skills/cto-comms/SKILL.md": "4ec241ab877a47ddbc1df4827131381de9d883443fe238d793e4b0f86bb1668e",
     ".claude/skills/file-pr/SKILL.md": "baa57def876a223b5b47e9aea176423b9c189240a41de86e90a277f008e5b118",
-    ".claude/skills/grill-me/SKILL.md": "29eab554a828b548d6fe165c2afd19bfc0c2f71f45d667fe8c029d270f5a8708",
+    ".claude/skills/grill-me/SKILL.md": "b440d6b6d4036685bb655bee5710029175181165e2bf3d408414284616f32900",
     ".claude/skills/html-communication/SKILL.md": "532bb56b2841f43ba6fdb31f28f97046809854f959d00bdd78e15031f6966025",
     ".claude/skills/i-have-adhd/SKILL.md": "d0160440714289d56185f9c1f697900f97d5de6e16397e7899b8c70be8095ab0",
     ".claude/skills/learning-loop/SKILL.md": "a86b586b0eb7a91d10e7ce41d2348e13cd2f3e8deb45642c8a463dde0929b7b0",
@@ -80,7 +80,7 @@
     ".claude/skills/show-your-work/SKILL.md": "365ba2715f89bb2bf9063b38265bf49a56748fcb727a329d817817830413da7a",
     ".claude/skills/test-protocol/SKILL.md": "183eacb8f72853dd498380cfbbe6a95ffc8753feaff036174b71e70b6e6a8c59",
     ".claude/skills/unslop/SKILL.md": "ea17320d4a026c4e580ee53bad4722ffdbd57a3744840e159c2a432e074f1a2f",
-    "AGENTS.md": "156e6aba2d1039b13515c07fd6082f0676e4da1dca89aeeef24fe21a91e082ba",
+    "AGENTS.md": "1d2057a6116ab8b7e233dde98543b4dee9478879feb124b207dfab3f3ac4d0df",
     "CLAUDE.md": "71c38752fb1f4bd77e10540ffa6afe2431f166790c1416f4c52ea27583f4b84c"
   },
   "profile": "personal-private",
@@ -106,7 +106,7 @@
     "test-protocol",
     "unslop"
   ],
-  "source_commit": "1364cd8eadeb7a014c05aa4bd9d3c500e8745967",
+  "source_commit": "0f87378f3138a3c995fa26669cb3d02bb19cb1ae",
   "source_repository": "https://github.com/AnthonyHinojosa77/ai-agent-system",
   "toolkit_version": "1.0.0"
 }
