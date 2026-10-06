@@ -1,6 +1,6 @@
 ---
 name: babysit-pr
-description: Monitor a pull request through CI and review only when Anthony explicitly asks to watch or babysit it.
+description: Monitor a pull request through CI and review only when the user explicitly asks to watch or babysit it.
 disable-model-invocation: true
 ---
 
@@ -14,6 +14,5 @@ Require an explicit request for the specific pull request before beginning.
 4. Fix real regressions within the original objective, validate locally, and push through the repository's normal workflow.
 5. Explain false positives factually. Do not expand scope to unrelated feature requests.
 6. Rebase or resolve conflicts only when needed for the requested PR to pass.
-7. Stop when required checks pass and actionable review comments are resolved, or when one concrete blocker requires Anthony.
+7. Stop when required checks pass and actionable review comments are resolved, or when one concrete blocker requires the user.
 8. Report final merge readiness. Do not merge unless separately authorized.
-

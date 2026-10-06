@@ -1,6 +1,0 @@
-interface:
-  display_name: "Claude Skill Creator"
-  short_description: "Create and benchmark reusable AI skills"
-  default_prompt: "Use $claude-skill-creator to create or improve a skill and evaluate its behavior."
-policy:
-  allow_implicit_invocation: true

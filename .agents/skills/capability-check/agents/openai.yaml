@@ -1,7 +1,2 @@
-interface:
-  display_name: "Capability Check"
-  short_description: "Verify AI tools in the exact target surface"
-  default_prompt: "Use $capability-check to verify this capability end to end in the named app."
 policy:
   allow_implicit_invocation: false
-

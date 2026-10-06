@@ -8,7 +8,7 @@ function fixture() {
   const form = {reset(){resets++;}} as unknown as HTMLFormElement;
   const OriginalFormData = globalThis.FormData;
   globalThis.FormData = class { *[Symbol.iterator](){yield* Object.entries(values);}} as unknown as typeof FormData;
-  Object.defineProperty(globalThis, 'window', {value:{location:{href:'https://example.com/rem-avi.m/'}}, configurable:true});
+  Object.defineProperty(globalThis, 'window', {value:{location:{href:'https://example.com/rem-avi/'}}, configurable:true});
   return {form, resets:()=>resets, restore(){globalThis.FormData=OriginalFormData;Reflect.deleteProperty(globalThis,'window');}};
 }
 test('accepted request sends every field, source, reference and honeypot, then resets', async()=>{

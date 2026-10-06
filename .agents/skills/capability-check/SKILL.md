@@ -21,4 +21,3 @@ Check the applicable states independently:
 Use a non-destructive test with a concrete expected result. For skills, restart or open a fresh task when discovery is cached. For connectors and providers, use their native status plus one harmless call. For automations, distinguish saved schedule, eligible execution, completed run, and notification delivery.
 
 Report each state as `Confirmed`, `Failed`, `Pending`, or `Unknown`, with the test, timestamp, and limitation. A saved file, installed package, visible setting, successful login page, or agent progress indicator establishes only its own state.
-

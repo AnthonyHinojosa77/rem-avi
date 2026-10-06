@@ -28,7 +28,7 @@ jobs:
         id: pages
       - run: pnpm build:pages
         env:
-          PAGES_BASE_PATH: ${{ vars.PAGES_BASE_PATH || '/rem-avi.m/' }}
+          PAGES_BASE_PATH: ${{ vars.PAGES_BASE_PATH || '/rem-avi/' }}
       - uses: actions/upload-artifact@v4
         with:
           name: remavi-static-site

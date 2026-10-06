@@ -8,14 +8,14 @@ RemAvi commercial flight operations website. The canonical UI is `app/page.tsx`,
 - Verify: `pnpm test:requests`, `pnpm typecheck`, `pnpm lint`.
 - Build for the GitHub project URL: `pnpm build:pages`.
 - Build for a custom domain or dedicated root site: `PAGES_BASE_PATH=/ pnpm build:pages`.
-- Preview: `pnpm preview:pages --port 4173`; open `http://127.0.0.1:4173/rem-avi.m/` for the default build.
+- Preview: `pnpm preview:pages --port 4173`; open `http://127.0.0.1:4173/rem-avi/` for the default build.
 - Publish only the contents of `dist-pages/`; never publish the repository history or private toolkit instructions as static assets.
 
 The browser sends the same inquiry fields to Coastal Vista's existing Formspree endpoint (`meerrdgp`), with a RemAvi subject/source, original page URL and an inquiry reference. The reference is sent to Formspree before it is shown to the visitor; confirmation and form reset occur only after an accepted response. Provider and network errors preserve entered values for retry. The hidden `website` trap maps to Formspree's `_gotcha` field. Both brands share that form's quota and account settings. The form endpoint is a public submission URL, not a secret. No test command submits to the real provider.
 
 ## GitHub Actions and publishing gate
 
-`pages.yml` validates requests, builds the static site on main, and retains a downloadable `remavi-static-site` artifact. Pages publishing is explicitly gated by repository variable `PAGES_ENABLED=true`, after Pages has been enabled with GitHub Actions as its source. Optional `PAGES_BASE_PATH` defaults to `/rem-avi.m/`; use `/` for a custom domain/root deployment. The current GitHub plan rejects Pages for this private repository; do not change its visibility to bypass that limit. A separate approved public artifact repository or supported Pages plan is required before publishing there. DNS and HTTPS changes happen separately after the destination is working.
+`pages.yml` validates requests, builds the static site on main, and retains a downloadable `remavi-static-site` artifact. Pages publishing is explicitly gated by repository variable `PAGES_ENABLED=true`, after Pages has been enabled with GitHub Actions as its source. Optional `PAGES_BASE_PATH` defaults to `/rem-avi/`; use `/` for a custom domain/root deployment. The repository is approved for public visibility. Install the public-safe agent profile before changing visibility; Pages must still be enabled separately. DNS and HTTPS changes happen separately after the destination is working.
 
 ## Preserved Sites deployment
 
