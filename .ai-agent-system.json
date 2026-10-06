@@ -1,5 +1,5 @@
 {
-  "content_sha256": "87a7ee50b878fb9e4edf1787997be79642eeffc829a2cba37caf28b7900987fc",
+  "content_sha256": "c2da07cb3ae05a3cae93d2b3accfbd0cf9d2bfc131fe81a16e2b45b8782b5406",
   "files": {
     ".agents/skills/babysit-pr/SKILL.md": "1886be56fe953f8f16e99fc253b9f0ee63031a3dad33058a7b0414e464a84ce5",
     ".agents/skills/babysit-pr/agents/openai.yaml": "372d34e194ae9a2c8436f6c1e37ff2a27e642afe1e5566be7794dce08ed7ceed",
@@ -80,7 +80,7 @@
     ".claude/skills/show-your-work/SKILL.md": "365ba2715f89bb2bf9063b38265bf49a56748fcb727a329d817817830413da7a",
     ".claude/skills/test-protocol/SKILL.md": "183eacb8f72853dd498380cfbbe6a95ffc8753feaff036174b71e70b6e6a8c59",
     ".claude/skills/unslop/SKILL.md": "ea17320d4a026c4e580ee53bad4722ffdbd57a3744840e159c2a432e074f1a2f",
-    "AGENTS.md": "1d2057a6116ab8b7e233dde98543b4dee9478879feb124b207dfab3f3ac4d0df",
+    "AGENTS.md": "6f06e1ff2d76f15dac7d197041dc90e636363014b06290278fd04fbf5a76ae9f",
     "CLAUDE.md": "71c38752fb1f4bd77e10540ffa6afe2431f166790c1416f4c52ea27583f4b84c"
   },
   "profile": "personal-private",
@@ -106,7 +106,7 @@
     "test-protocol",
     "unslop"
   ],
-  "source_commit": "0f87378f3138a3c995fa26669cb3d02bb19cb1ae",
+  "source_commit": "066531f1a479e5881963e89dad20e6c60af87cb5",
   "source_repository": "https://github.com/AnthonyHinojosa77/ai-agent-system",
-  "toolkit_version": "1.0.0"
+  "toolkit_version": "1.1.0"
 }
