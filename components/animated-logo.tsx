@@ -25,6 +25,6 @@ export default function AnimatedLogo(){
    <rect className="logo-word-reveal" x="850" y="830" width="560" height="130" fill="white"/>
    <rect className="logo-complete" x="850" y="500" width="560" height="460" fill="white"/>
   </mask></defs>
-  <image href="/remavi-aircraft-logo.png" x="0" y="0" width="1536" height="1024" mask={'url(#logo-reveal-'+id+')'}/>
+  <image href="./remavi-aircraft-logo.png" x="0" y="0" width="1536" height="1024" mask={'url(#logo-reveal-'+id+')'}/>
  </svg>;
 }

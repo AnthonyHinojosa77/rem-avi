@@ -1,3 +1,39 @@
+# RemAvi
+
+RemAvi commercial flight operations website. The canonical UI is `app/page.tsx`, shared by the existing Sites build and the new standalone static build. The animated logo, phone orientation and desktop cursor flight display, and Coastal Vista link use the same components and CSS in both builds.
+
+## Standalone static site
+
+- Install: `pnpm install --frozen-lockfile` (Node 22+, pinned pnpm 11.25.0).
+- Verify: `pnpm test:requests`, `pnpm typecheck`, `pnpm lint`.
+- Build for the GitHub project URL: `pnpm build:pages`.
+- Build for a custom domain or dedicated root site: `PAGES_BASE_PATH=/ pnpm build:pages`.
+- Preview: `pnpm preview:pages --port 4173`; open `http://127.0.0.1:4173/rem-avi.m/` for the default build.
+- Publish only the contents of `dist-pages/`; never publish the repository history or private toolkit instructions as static assets.
+
+The browser sends the same inquiry fields to Coastal Vista's existing Formspree endpoint (`meerrdgp`), with a RemAvi subject/source, original page URL and an inquiry reference. The reference is sent to Formspree before it is shown to the visitor; confirmation and form reset occur only after an accepted response. Provider and network errors preserve entered values for retry. The hidden `website` trap maps to Formspree's `_gotcha` field. Both brands share that form's quota and account settings. The form endpoint is a public submission URL, not a secret. No test command submits to the real provider.
+
+## GitHub Actions and publishing gate
+
+`pages.yml` validates requests, builds the static site on main, and retains a downloadable `remavi-static-site` artifact. Pages publishing is explicitly gated by repository variable `PAGES_ENABLED=true`, after Pages has been enabled with GitHub Actions as its source. Optional `PAGES_BASE_PATH` defaults to `/rem-avi.m/`; use `/` for a custom domain/root deployment. The current GitHub plan rejects Pages for this private repository; do not change its visibility to bypass that limit. A separate approved public artifact repository or supported Pages plan is required before publishing there. DNS and HTTPS changes happen separately after the destination is working.
+
+## Preserved Sites deployment
+
+`pnpm build`, `pnpm dev`, the Sites configuration, D1 route, schema and stored request data remain available for rollback. New UI inquiries use Formspree; no data migration or deletion is performed. The historical D1 endpoint is retained but is not included in the standalone browser bundle.
+
+## Verification sources
+
+- [Formspree JavaScript submission](https://help.formspree.io/articles/building-your-form/submit-forms-with-javascript-ajax/)
+- [Formspree special fields](https://help.formspree.io/articles/building-your-form/special-fields/)
+- [Vite static deployment and base paths](https://vite.dev/guide/static-deploy.html)
+- [GitHub Pages custom workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)
+
+Provider acceptance, email receipt, public HTTPS, actual phone sensor access and DNS email preservation must be verified on the final deployed origin before calling migration complete.
+
+---
+
+## Original Sites runtime documentation
+
 # vinext-starter
 
 A clean full-stack starter running on [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and Drizzle support.

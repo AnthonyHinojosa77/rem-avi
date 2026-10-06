@@ -14,7 +14,7 @@ export default function FlightDisplay(){
  const last=useRef<OrientationSample|null>(null);
  const [openFullSite,setOpenFullSite]=useState(false);
  const [permissionDenied,setPermissionDenied]=useState(false);
- const fullSiteUrl='https://remavi-flight-ops.tonytone77.chatgpt.site/#flight-display';
+ const fullSiteUrl=typeof window==='undefined'?'#flight-display':new URL('#flight-display',window.location.href).href;
  function accessProblem(){
   let embedded=true;try{embedded=window.self!==window.top;}catch{}
   const policy=(document as unknown as {permissionsPolicy?:{allowsFeature:(name:string)=>boolean};featurePolicy?:{allowsFeature:(name:string)=>boolean}});
