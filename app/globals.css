@@ -36,3 +36,8 @@ header{height:122px;background:#020604}.brand .logo-art{width:118px;height:85.36
 .subsidiary-action span{font-size:24px;line-height:1}
 @media(max-width:700px){.subsidiary{padding-top:30px}.subsidiary-strip{grid-template-columns:1fr;gap:16px;padding:22px 20px}.subsidiary-strip .code{margin-right:0}.subsidiary-strip h2{font-size:26px}.subsidiary-action{font-size:14px;justify-content:space-between}}
 @media(prefers-reduced-motion:reduce){.logo-stroke{animation:none!important;stroke-dashoffset:0}.logo-word-reveal{animation:none!important;transform:scaleX(1)}.logo-complete{animation:none!important;opacity:1}}
+
+.base a{font-size:14px;color:#d1d9dc;font-weight:400;letter-spacing:.2px}
+.base a:hover,.footer-mail:hover{color:var(--green)}
+.footer-mail{color:#d1d9dc;letter-spacing:.2px}
+@media(max-width:700px){.base{display:flex;margin-top:0;padding-top:16px}.base .place{display:none}.footer-mail{padding:10px 0}}
