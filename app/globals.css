@@ -40,4 +40,4 @@ header{height:122px;background:#020604}.brand .logo-art{width:118px;height:85.36
 .base a{font-size:14px;color:#d1d9dc;font-weight:400;letter-spacing:.2px}
 .base a:hover,.footer-mail:hover{color:var(--green)}
 .footer-mail{color:#d1d9dc;letter-spacing:.2px}
-@media(max-width:700px){.base{display:flex;margin-top:0;padding-top:16px}.base .place{display:none}.footer-mail{flex:1 0 100%;padding:8px 0}}
+@media(max-width:700px){.base{display:flex;margin-top:0;padding-top:16px}.base .place{display:none}.footer-mail{padding:10px 0}}
