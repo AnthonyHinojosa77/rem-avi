@@ -15,7 +15,7 @@ The browser sends the same inquiry fields to Coastal Vista's existing Formspree 
 
 ## GitHub Actions and publishing gate
 
-`pages.yml` validates requests, builds the static site on main, and retains a downloadable `remavi-static-site` artifact. Pages publishing is explicitly gated by repository variable `PAGES_ENABLED=true`, after Pages has been enabled with GitHub Actions as its source. Optional `PAGES_BASE_PATH` defaults to `/rem-avi/`; use `/` for a custom domain/root deployment. The repository is approved for public visibility. Install the public-safe agent profile before changing visibility; Pages must still be enabled separately. DNS and HTTPS changes happen separately after the destination is working.
+`pages.yml` validates requests, builds the static site on main, and retains a downloadable `remavi-static-site` artifact. Pages publishing is explicitly gated by repository variable `PAGES_ENABLED=true`, after Pages has been enabled with GitHub Actions as its source. Optional `PAGES_BASE_PATH` defaults to `/rem-avi/`; use `/` for a custom domain/root deployment. The repository is approved for public visibility. Pages must still be enabled separately. DNS and HTTPS changes happen separately after the destination is working.
 
 ## Preserved Sites deployment
 
